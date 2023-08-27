@@ -42,7 +42,7 @@ function Food(){
 
                 <div className='mt-2'>
                     <p className='font-bold text-gray-700 '>FIlter Price</p>
-                    <div className='flex justify-between max-w-[450px] w-full'>
+                    <div className='flex justify-between flex-wrap  md:max-w-[450px] w-full'>
                         <button onClick={()=>filterPrice(1,49)} className='m-1 text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white'>0-$49</button>
                         <button onClick={()=>filterPrice(50,99)} className='m-1 text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white'>50-$99</button>
                         <button onClick={()=>filterPrice(100,199)} className='m-1 text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-white'>100-$199</button>
@@ -56,7 +56,8 @@ function Food(){
                 ))}
                 
             </div>
-            
+            {/* cart inputs */}
+          
         </div>
 )}
 

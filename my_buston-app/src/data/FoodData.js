@@ -183,11 +183,11 @@
 
 
       function getProductData(id){
-        const price = data.find(product=>product.id===id);
-        if(price===null){
+        const product = data.find(product=>product.id===id);
+        if(product===null){
           return undefined;
         };
-        return price;
+        return product;
       };
 
       export {getProductData};
