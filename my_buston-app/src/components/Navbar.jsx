@@ -32,8 +32,8 @@ function Navbar(){
                 <AiOutlineSearch className='cursor-pointer' size={25}/>
             </div>
 
-            <button className='font-bold gap-2 bg-black text-white hidden md:flex items-center border-orange-500 active:translate-y-1 duration-300'>
-                <BsFillCartFill onClick={()=>setCart(!carts)} size={25}/> Cart
+            <button  onClick={()=>setCart(!carts)} className='font-bold gap-2 bg-black text-white hidden md:flex items-center border-orange-500 active:translate-y-1 duration-300'>
+                <BsFillCartFill size={25}/> Cart
             </button>
 
             {/* Navbar menu */}
